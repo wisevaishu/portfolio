@@ -1,0 +1,180 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Rose Milk Pink Background */
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #FADADD; /* Rose Milk Pink */
+  overflow: hidden;
+}
+
+/* Container for full-screen layout */
+.portfolio-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  position: relative;
+}
+
+/* Left Side: Photo and Experience */
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #343a40;
+}
+
+.photo-section {
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  width: 80px; /* Smaller, square size */
+  height: 80px;
+  border-radius: 10px; /* Square shape with slight rounding */
+  object-fit: cover;
+}
+
+.experience-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.experience-section p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.experience-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.experience-section li {
+  margin: 5px 0;
+}
+
+/* Right Side: Projects and Skills */
+.right-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.content-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.content-section h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.content-section li {
+  margin: 5px 0;
+}
+
+.content-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.content-section a:hover {
+  color: #0056b3;
+}
+
+/* Styling for the name animation at the top left */
+.name-animation {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  /* justify-content: flex-start; */
+  z-index: 10; /* Ensures the name appears above other elements */
+}
+
+.letter {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resume-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: #343a40; /* Icon color */
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #d4d4d4;
+}
+
+.profile-photo-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
