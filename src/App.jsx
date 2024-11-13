@@ -24,8 +24,16 @@ function App() {
         <div className="profile-photo-container">
         <img src={photo} alt="Your Profile" className="profile-photo" />
         </div>
+
+        
         
         <div className="left-side">
+
+          {/* Tagline */}
+        <div className="tagline">
+          "Design. Develop. Test. Deliver Excellence"
+        </div>
+
         {/* Resume Button */}
         <div className="experience-section">
           <a href="/resume.pdf" download="Vaishnavi_Devi_Resume" className="resume-button">

@@ -16,20 +16,20 @@ body, html {
 /* Container for full-screen layout */
 .portfolio-container {
   display: flex;
-  height: 100vh; /* Full viewport height */
-  width: 100vw;  /* Full viewport width */
-  position: relative;
+  justify-content: space-between; /* Space between left and right side */
+  align-items: center;
+  height: 100vh;
 }
 
 /* Left Side: Photo and Experience */
 .left-side {
-  flex: 1;
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 2rem;
-  color: #343a40;
+  padding-left: 20px;
+  
 }
 
 .photo-section {
@@ -162,7 +162,7 @@ body, html {
   height: 40px;
   font-size: 1.5rem;
   color: #343a40; /* Icon color */
-  background-color: #f1f1f1;
+  background-color: #FADADD; /* Matches website background */
   border-radius: 50%;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -178,3 +178,22 @@ body, html {
   right: 20px;
   z-index: 10;
 }
+
+@font-face {
+  font-family: 'HandwrittenFont'; /* You can give it any name */
+  src: url('./assets/fonts/Revamped-X3q1a.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Tagline Styling */
+.tagline {
+  font-family: 'HandwrittenFont', cursive; /* Your custom font */
+  font-size: 0.75rem;
+  color: black;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
